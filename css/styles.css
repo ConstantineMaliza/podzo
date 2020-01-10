@@ -1,0 +1,16 @@
+nav a:hover {
+    color: #ff6000 !important;
+}
+
+nav .nav-item.on a {
+    color: #ff6000 !important;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 20px;
+}
+
+#search h1 {
+    font-weight: bold;
+}
