@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
     <main>
@@ -31,17 +33,109 @@
                       <a class="nav-link" href="#"><b>Login</b></a>
                     </li>
                     <li class="nav-item">
-                      <button class="btn btn-primary">Sign Up</button>
+                      <button class="btn btn-warning">Sign Up</button>
                     </li>
         
                   </ul>
                 </div>
             </div>
         </nav>
-        <section id="search" class="d-flex align-items-center justify-content-center py-5">
+        <section id="search" class="d-flex flex-column align-items-center justify-content-center py-5">
             <h1>10 found restaurants</h1>
+            <div class="form-group my-4">
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search Restaurants">
+              </div> 
+            </div>
+        </section>
+        <section id="cards-list" class="bg-light d-flex flex-column align-items-center justify-content-center py-5">
+          <div class="container">
+            <h3 class="text-center"><b>Our Restaurants</b></h3>
+            <div class="row my-4">
 
+              <div class="col-12 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./Assets/food.png" class="card-img-top" alt="food">
+                    <div class="card-body row">
+                      <div class="col-sm-3">
+                        <img src="./Assets/restaurant.png" class="img-responsive">
+                      </div>
+                      <div class="col-sm-8 ml-3 mt-2">
+                        <h6><b>KUGASIMA Caffee</b></h6>
+                        <p class="card-text text-dark-gray">254 Kigali Rwampara</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./Assets/food.png" class="card-img-top" alt="food">
+                    <div class="card-body row">
+                      <div class="col-sm-3">
+                        <img src="./Assets/restaurant.png" class="img-responsive">
+                      </div>
+                      <div class="col-sm-8 ml-3 mt-2">
+                        <h6><b>KUGASIMA Caffee</b></h6>
+                        <p class="card-text text-dark-gray">254 Kigali Rwampara</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="bg-gray-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 text-center text-white">
+                <h2 class="my-5"><b>Contact us</b></h2>
+                <ul>
+                  <li>
+                    <p><span class="fas fa-phone-square-alt"></span> +250785578777</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-phone-square-alt"></i> +250785578777</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-phone-square-alt"></i> +250785578777</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
+                  <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" id="inputMessage" placeholder="Message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-warning">Send</button>
+                    </form>
+              </div>
+            </div>
+          </div>
         </section>
     </main>
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-sm-6 text-left pt-3">
+            <p>Challenge by <b>AwesomityLab Ltd</b></p>
+          </div>
+          <div class="col-sm-6 text-right pt-3">
+            <p>Developed by <span class="text-warning">MALIZA CO</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
