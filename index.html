@@ -41,33 +41,20 @@
             </div>
         </nav>
         <section id="search" class="d-flex flex-column align-items-center justify-content-center py-5">
-            <h1>10 found restaurants</h1>
-            <div class="form-group my-4">
-              <div class="form-group has-search">
-                <span class="fa fa-search form-control-feedback"></span>
-                <input type="text" class="form-control" placeholder="Search Restaurants">
-              </div> 
-            </div>
+            <h1><span id="numb-found"></span> found restaurants</h1>
+            <form id="search-form">
+              <div class="form-group my-4">
+                <div class="form-group has-search">
+                  <span class="fa fa-search form-control-feedback"></span>
+                  <input type="text" name="query" id="query" class="form-control" placeholder="Search Restaurants">
+                </div> 
+              </div>
+            </form>
         </section>
         <section id="cards-list" class="bg-light d-flex flex-column align-items-center justify-content-center py-5">
           <div class="container">
             <h3 class="text-center"><b>Our Restaurants</b></h3>
-            <div class="row my-4">
-
-              <div class="col-12 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="./Assets/food.png" class="card-img-top" alt="food">
-                    <div class="card-body row">
-                      <div class="col-sm-3">
-                        <img src="./Assets/restaurant.png" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 ml-3 mt-2">
-                        <h6><b>KUGASIMA Caffee</b></h6>
-                        <p class="card-text text-dark-gray">254 Kigali Rwampara</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
+            <div class="row my-4" id="restos-list">
 
               <div class="col-12 col-lg-3">
                 <div class="card" style="width: 18rem;">
@@ -137,5 +124,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
